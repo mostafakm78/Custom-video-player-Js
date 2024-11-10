@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>custom video player</title>
+</head>
+<body>
+    <div class="video-player">
+        <video class="video" src="./The-Last-of-Us-Part-II-–-Official-Extended-Commercial-_-PS4.mp4"></video>
+        <div class="my-player-control">
+            <div class="control-prgsbar">
+                <input class="control-prgsbar-current" type="range" min="1" max="100" step="1" value="0">
+            </div>
+            <div class="control-btns">
+                <div class="left">
+                    <div class="btns play">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="btns rewind">
+                        <i class="fa fa-backward"></i>
+                    </div>
+                    <div class="btns forward">
+                        <i class="fa fa-forward"></i>
+                    </div>
+                    <div class="timer">
+                        <span class="currentTime">00:00</span>
+                        <span>/</span>
+                        <span class="videoTime">00:00</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="btns volume">
+                        <i class="fa fa-volume-up"></i>
+                        <div class="volume-progress">
+                            <input id="volume_bar" type="range" min="1" max="100" step="1" value="100" >
+                        </div>
+                    </div>
+                    <div class="btns fullscreen">
+                        <i class="fa fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
